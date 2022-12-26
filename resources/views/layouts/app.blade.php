@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="/css/responsive.css">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
@@ -75,6 +76,7 @@
     <script src="/js/rev-custom.js"></script>
     <!--custom js-->
     <script src="/js/custom.js"></script>
+
 </body>
 
 </html>

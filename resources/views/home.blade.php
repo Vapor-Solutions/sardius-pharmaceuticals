@@ -3,7 +3,7 @@
 
 @section('content')
     <x-slider></x-slider>
-    <x-appointment-form></x-appointment-form>
+    {{-- <x-appointment-form></x-appointment-form> --}}
     <x-deliverables></x-deliverables>
     <x-what-we-do></x-what-we-do>
 
