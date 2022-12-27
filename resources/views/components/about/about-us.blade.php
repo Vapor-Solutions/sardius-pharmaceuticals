@@ -51,6 +51,14 @@
                              </li>
                          </ul>
                      </div>
+                     <div class="col-lg-6 col-md-6 mt-md-5">
+                        <div class="pq-contact-box1">
+                            <h4 class="pq-contact-title">{{ env('COMPANY_PHONE') }}</h4>
+                            <p class="pq-contact-desciption pq-text-primary mb-0">Do you have any question?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 mt-md-5"> <img src="images/sign.png" class="img-fluid pq-signimg"
+                            alt="home"> </div>
                  </div>
              </div>
          </div>

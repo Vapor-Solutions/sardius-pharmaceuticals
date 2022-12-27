@@ -4,8 +4,8 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="health-img">
-                    <img src="/rev/assets/2-6.jpg" class="pq-image3 wow fadeInLeft" alt="">
-                    <img src="/rev/assets/2-51.jpg" class="pq-image4 wow fadeInLeft" alt="">
+                    <img src="/images/health/1.jpg" class="pq-image3 wow fadeInLeft" alt="">
+                    <img src="/images/health/2.jpg" class="pq-image4 wow fadeInLeft" alt="">
                 </div>
             </div>
             <div class="col-lg-6 mt-4 mt-xl-0">
