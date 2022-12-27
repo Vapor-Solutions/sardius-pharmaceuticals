@@ -1,22 +1,19 @@
 <?php
 
-namespace App\View\Components;
+namespace App\View\Components\Services;
 
 use Illuminate\View\Component;
 
-class Banner extends Component
+class OurServices extends Component
 {
-    public $url = "";
     /**
      * Create a new component instance.
      *
      * @return void
      */
-
-
-    public function __construct($url)
+    public function __construct()
     {
-        $this->url = $url;
+        //
     }
 
     /**
@@ -26,6 +23,6 @@ class Banner extends Component
      */
     public function render()
     {
-        return view('components.banner');
+        return view('components.services.our-services');
     }
 }
