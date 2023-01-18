@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Admin;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,25 @@ Route::get('/gallery', function () {
 Route::get('/contact-us', function () {
     return view('contact-us');
 })->name('contact-us');
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->prefix('admin')->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+
+
+    Route::prefix('photos')->group(function(){
+        Route::get('/', Admin\Photos\Index::class)->name('admin.photos.index');
+        Route::get('/create', Admin\Photos\Create::class)->name('admin.photos.create');
+        Route::get('/{id}/edit', Admin\Photos\Edit::class)->name('admin.photos.edit');
+    });
+
+    Route::prefix('site-images')->group(function(){
+
+    });
+
+});

@@ -5,7 +5,7 @@
             <div class="col-lg-12">
                 <div class="pq-section pq-style-1 text-center">
                     <span class="pq-section-sub-title">what we do</span>
-                    <h5 class="pq-section-title">aligned to GSK’s purpose, strategy and culture.</h5>
+                    <h5 class="pq-section-title">Aligned to your customer needs.</h5>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">

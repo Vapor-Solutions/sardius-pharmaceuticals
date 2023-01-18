@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.front')
 
 
 @section('content')
     <x-slider></x-slider>
     {{-- <x-appointment-form></x-appointment-form> --}}
-    <x-deliverables></x-deliverables>
     <x-what-we-do></x-what-we-do>
+    <x-deliverables></x-deliverables>
 
     <!--==================clinic start==================-->
     {{-- <section class="clinic pt-0 pb-0 pq-mt-335">

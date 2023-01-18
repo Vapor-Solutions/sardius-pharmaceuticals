@@ -23,7 +23,7 @@
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="y:50,39,29,17;"
                         data-frame_1="st:1100;sp:1000;" data-frame_999="o:0;st:w;sR:6900;"
                         style="z-index:11;font-family:'Quicksand';text-transform:capitalize;">Welcome to Sardius
-                        Pharmaceuticals
+                        Pharma
                     </rs-layer>
                     <!--
 
@@ -83,7 +83,7 @@
                         data-text="w:normal;s:54,42,38,22;l:62,50,46,30;fw:600;" data-dim="w:448px,352px,278px,191px;"
                         data-border="boc:#14457b;bow:1px,1px,1px,1px;" data-frame_0="y:50,39,29,17;"
                         data-frame_1="st:1100;sp:1000;" data-frame_999="o:0;st:w;sR:6900;"
-                        style="z-index:11;font-family:'Quicksand';text-transform:capitalize;">Welcome to Sardius Pharmaceuticals
+                        style="z-index:11;font-family:'Quicksand';text-transform:capitalize;">Welcome to Sardius Pharma
                     </rs-layer>
                     <!--
 
