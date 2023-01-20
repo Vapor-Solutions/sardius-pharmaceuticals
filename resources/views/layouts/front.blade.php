@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <!--  Responsive CSS -->
     <link rel="stylesheet" href="/css/responsive.css">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 
 <body>
