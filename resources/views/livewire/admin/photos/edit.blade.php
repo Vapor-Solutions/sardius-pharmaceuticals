@@ -1,3 +1,7 @@
 <div>
-    {{-- A good traveler has no fixed plans and is not intent upon arriving. --}}
+    <x-slot name="header">
+        <h2 class="h4 font-weight-bold">
+            {{ __('Photos') }}
+        </h2>
+    </x-slot>
 </div>

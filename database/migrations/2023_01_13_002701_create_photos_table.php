@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('photos', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('photo_category_id')->nullable();
+            $table->string('title');
+            $table->string('description')->nullable();
+            $table->string('photo_path');
             $table->timestamps();
         });
     }
