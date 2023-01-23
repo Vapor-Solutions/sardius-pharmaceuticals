@@ -20,6 +20,12 @@
                 <x-jet-nav-link href="{{ route('admin.photos.index') }}" :active="request()->routeIs('admin.photos.index')">
                     {{ __('Photos') }}
                 </x-jet-nav-link>
+                <x-jet-nav-link href="{{ route('admin.contacts.index') }}" :active="request()->routeIs('admin.contacts.index')">
+                    {{ __('Contacts') }}
+                </x-jet-nav-link>
+                <x-jet-nav-link href="{{ route('admin.subscribers.index') }}" :active="request()->routeIs('admin.subscribers.index')">
+                    {{ __('Newsletter Subscribers') }}
+                </x-jet-nav-link>
             </ul>
 
             <!-- Right Side Of Navbar -->

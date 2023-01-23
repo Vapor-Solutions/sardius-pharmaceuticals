@@ -56,6 +56,9 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified']
         Route::get('/{id}/edit', Admin\PhotoCategories\Edit::class)->name('admin.photo_categories.edit');
     });
 
+    Route::get('contacts', Admin\Contacts\Index::class)->name('admin.contacts.index');
+    Route::get('subscribers', Admin\Subscribers\Index::class)->name('admin.subscribers.index');
+
     Route::prefix('site-images')->group(function(){
 
     });
