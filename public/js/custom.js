@@ -622,7 +622,6 @@ function addSubscriber() {
         alert("Please enter a valid email address");
         return false;
     }
-    
     $.ajax({
         type: "POST",
         url: "/add-subscriber-email",
