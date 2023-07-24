@@ -70,37 +70,39 @@
                         </div>
                     </div>
                     <div class="pq-applyform-whitebg text-start">
-                        <form action="#" class="pq-applyform">
+                        <form action="{{ route('contactUs') }}" class="pq-applyform" method="POST">
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="text" id="first-name" name="your-name" class="name-field" value=""
+                                    <input type="text" id="name" name="name" class="name-field" value=""
                                         size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Name">
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="email" id="e-mail" name="your-email" class="e-mail-field"
+                                    <input type="email" id="email" name="email" class="e-mail-field"
                                         value="" size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Email">
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="text" id="phone-number" name="phone-number" class="phone-number-field"
+                                    <input type="text" id="phone_number" name="phone_number" class="phone-number-field"
                                         value="" size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Phone Number">
                                 </div>
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="text" id="subject" name="your-Subject" class="subject-field"
+                                    <input type="text" id="subject" name="subject" class="subject-field"
                                         size="40" aria-required="true" aria-invalid="false" placeholder="Subject">
                                 </div>
                                 <div class="col-lg-12 col-md-12 mb-3">
-                                    <textarea name="your-message" id="message" cols="40" rows="10" aria-required="true" aria-invalid="false"
+                                    <textarea name="message" id="message" cols="40" rows="10" aria-required="true" aria-invalid="false"
                                         placeholder="Write Your Message"></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
-                                    <a class="pq-button form-btn mt-3" href="#">
+                                    {{-- <a class="pq-button form-btn mt-3" href="#" type="submit">
                                         <div class="pq-button-block">
                                             <span class="pq-button-text me-0">send message</span>
                                         </div>
-                                    </a>
+                                    </a> --}}
+                                    <button type="submit" class="btn btn-dark">Send Message</button>
                                 </div>
                             </div>
                         </form>

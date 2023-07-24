@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\NewsletterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Admin;
@@ -34,6 +35,9 @@ Route::get('/contact-us', function () {
 
 //Add subscriber email
 Route::post('/add-subscriber-email', [NewsletterController::class, 'addNewsletterSubscriber'])->name('newsletterSubscriber');
+
+//Contact us details
+Route::post('/add-contact-us-details', [ContactUsController::class, 'contactUsDetails'])->name('contactUs');
 
 /**
  * Redirect Routes

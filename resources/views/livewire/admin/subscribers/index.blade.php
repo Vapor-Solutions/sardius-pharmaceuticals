@@ -29,9 +29,9 @@
                                     <td>{{ $subscriber->email }}</td>
                                     <td>
                                         @if ($subscriber->status == 1)
-                                            Subscribed
+                                            <span class="text-success">Subscribed</span>
                                         @else
-                                            Unsubscribed
+                                            <span class="text-danger">Unsubscribed</span>
                                         @endif
                                     </td>
                                     <td>
