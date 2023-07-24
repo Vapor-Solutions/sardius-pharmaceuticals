@@ -15,7 +15,8 @@ class NewsletterController extends Controller
             if($subscriberCount > 0){
                 return "exists";
             }else{
-                //add newsletter subscriber in the subscribers table
+                //Add newsletter subscriber in the subscribers table
+                
                 $newsletter = new Subscribers;
                 $newsletter->email = $data['subscriber_email'];
                 $newsletter->status = 1;

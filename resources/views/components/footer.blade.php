@@ -19,10 +19,13 @@
                                 <div class="col-lg-7 align-self-center">
                                     <div class="pq-subscribe-from">
                                         <form id="form" class="form">
+
+                                            @csrf
+
                                             <div class="form-fields">
                                                 <input class="w-100 pq-bg-transparent" type="email" name="subscriber_email" id="subscriber_email"
                                                     placeholder="Enter Your Email" required="">
-                                                    <button type="submit" onclick="addSubscriber();">Sign Up</button>
+                                                    <button type="submit" class="btn btn-light" onclick="addSubscriber();">Sign Up</button>
                                                 {{-- <input class="" type="submit" onclick="addSubscriber();" value="Sign up"> --}}
                                             </div>
                                         </form>

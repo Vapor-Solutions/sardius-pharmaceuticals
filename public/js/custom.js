@@ -611,15 +611,18 @@ Design and Developed by: PeacefulQode
 })(jQuery);
 
 function addSubscriber() {
+
     // alert('test');
     var subscriber_email = $("#subscriber_email").val;
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   // var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     // alert(regex.test(subscriber_email));
 
     if (regex.test(subscriber_email) == false) {
         alert("Please enter a valid email address");
         return false;
     }
+    
     $.ajax({
         type: "POST",
         url: "/add-subscriber-email",
@@ -635,5 +638,4 @@ function addSubscriber() {
             alert("Error");
         },
     });
-    // return regex.test(email);
 }

@@ -17,6 +17,3 @@ window.Toast = Swal.mixin({
     timer: 5000,
 });
 
-// function addSubscriber(){
-//     alert('test');
-// }
