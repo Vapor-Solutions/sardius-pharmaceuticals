@@ -214,7 +214,7 @@
     </section> --}}
     <!--==================who we are end==================-->
 
-    <x-team></x-team>
+    {{-- <x-team></x-team> --}}
     <!--==================testimonial start==================-->
     {{-- <x-testimonials></x-testimonials> --}}
     <!--==================testimonial end==================-->

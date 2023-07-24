@@ -6,12 +6,12 @@
         <x-slot name="title">Contact Us</x-slot>
     </x-banner>
     <!--=================================
-                         conatct-us start-->
+                             conatct-us start-->
     <section class="pq-contact-us">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="pq-contact-box">
+                    <div class="pq-contact-box" style="height: 350px;">
                         <div class="pq-contact-box-icon">
                             <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-location"></i> </div>
                         </div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-4">
-                    <div class="pq-contact-box">
+                    <div class="pq-contact-box" style="height: 350px;">
                         <div class="pq-contact-box-icon">
                             <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-ios-telephone"></i>
                             </div>
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 mt-lg-0 mt-4">
-                    <div class="pq-contact-box">
+                    <div class="pq-contact-box" style="height: 350px;">
                         <div class="pq-contact-box-icon">
                             <div class="icon animation-grow"> <i aria-hidden="true" class="ion ion-email-unread"></i> </div>
                         </div>
@@ -56,9 +56,9 @@
         </div>
     </section>
     <!--=================================
-                               contact-us end-->
+                                   contact-us end-->
     <!--=================================
-                               get-in-touch start-->
+                                   get-in-touch start-->
     <section class="get-in-touch p-0">
         <div class="container">
             <div class="row">
@@ -72,31 +72,31 @@
                     <div class="pq-applyform-whitebg text-start">
                         <form action="#" class="pq-applyform">
                             <div class="row">
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-6 col-md-6 mb-3">
                                     <input type="text" id="first-name" name="your-name" class="name-field" value=""
                                         size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Name">
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-6 col-md-6 mb-3">
                                     <input type="email" id="e-mail" name="your-email" class="e-mail-field"
                                         value="" size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Email">
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-6 col-md-6 mb-3">
                                     <input type="text" id="phone-number" name="phone-number" class="phone-number-field"
                                         value="" size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Phone Number">
                                 </div>
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-6 col-md-6 mb-3">
                                     <input type="text" id="subject" name="your-Subject" class="subject-field"
                                         size="40" aria-required="true" aria-invalid="false" placeholder="Subject">
                                 </div>
-                                <div class="col-lg-12 col-md-12">
+                                <div class="col-lg-12 col-md-12 mb-3">
                                     <textarea name="your-message" id="message" cols="40" rows="10" aria-required="true" aria-invalid="false"
                                         placeholder="Write Your Message"></textarea>
                                 </div>
                                 <div class="col-lg-12 col-md-12">
-                                    <a class="pq-button form-btn">
+                                    <a class="pq-button form-btn mt-3" href="#">
                                         <div class="pq-button-block">
                                             <span class="pq-button-text me-0">send message</span>
                                         </div>
@@ -110,9 +110,9 @@
         </div>
     </section>
     <!--=================================
-                               get-in-touch end-->
+                                   get-in-touch end-->
     <!--=================================
-                               map start-->
+                                   map start-->
     <div class="map pt-0">
         <div class="pq-bg-map">
             <iframe src="https://maps.google.com/maps?q=The%20Stables%20Karen&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -120,6 +120,6 @@
         </div>
     </div>
     <!--=================================
-                               map end-->
+                                   map end-->
     <!--=================================-->
 @endsection

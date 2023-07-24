@@ -5,7 +5,7 @@
                      alt="home"> </div>
              <div class="col-xl-6 px-xl-4 mt-4 mt-xl-0">
                  <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">What About Us</span>
-                     <h5 class="pq-section-title">Joining Hands With Techno Easement</h5>
+                     <h5 class="pq-section-title">HERE TO MEET YOUR BUSINESS NEEDS</h5>
                      <p class="pq-section-description">Sardius Pharma Limited is a company established in 2022 in
                          Nairobi, Kenya to provide Pharmaceutical Regulatory Services, Local
                          Technical Representation (LTR), Pharmacovigilance, Quality Assurance, Clinical Trial
@@ -52,13 +52,13 @@
                          </ul>
                      </div>
                      <div class="col-lg-6 col-md-6 mt-md-5">
-                        <div class="pq-contact-box1">
-                            <h4 class="pq-contact-title">{{ env('COMPANY_PHONE') }}</h4>
-                            <p class="pq-contact-desciption pq-text-primary mb-0">Do you have any question?</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mt-md-5"> <img src="images/sign.png" class="img-fluid pq-signimg"
-                            alt="home"> </div>
+                         <div class="pq-contact-box1">
+                             <h4 class="pq-contact-title">{{ env('COMPANY_PHONE') }}</h4>
+                             <p class="pq-contact-desciption pq-text-primary mb-0">Do you have any question?</p>
+                         </div>
+                     </div>
+                     {{-- <div class="col-lg-6 col-md-6 mt-md-5"> <img src="images/sign.png" class="img-fluid pq-signimg"
+                            alt="home"> </div> --}}
                  </div>
              </div>
          </div>

@@ -16,3 +16,7 @@ window.Toast = Swal.mixin({
     timerProgressBar: true,
     timer: 5000,
 });
+
+// function addSubscriber(){
+//     alert('test');
+// }

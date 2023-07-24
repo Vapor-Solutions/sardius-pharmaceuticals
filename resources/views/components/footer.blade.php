@@ -20,9 +20,10 @@
                                     <div class="pq-subscribe-from">
                                         <form id="form" class="form">
                                             <div class="form-fields">
-                                                <input class="w-100 pq-bg-transparent" type="email" name="EMAIL"
+                                                <input class="w-100 pq-bg-transparent" type="email" name="subscriber_email" id="subscriber_email"
                                                     placeholder="Enter Your Email" required="">
-                                                <input class="" type="submit" value="Sign up">
+                                                    <button type="submit" onclick="addSubscriber();">Sign Up</button>
+                                                {{-- <input class="" type="submit" onclick="addSubscriber();" value="Sign up"> --}}
                                             </div>
                                         </form>
                                     </div>

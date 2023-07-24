@@ -7,10 +7,10 @@
                     <div class="col-md-6 text-right">
                         <div class="pq-header-social text-right">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                                <li><a href="{{ env('COMPANY_FACEBOOK') }}"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="{{ env('COMPANY_WHATSAPP') }}"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a href="{{ env('COMPANY_LINKEDIN') }}"><i class="fab fa-linkedin"></i></a></li>
+                                <li><a href="{{ env('COMPANY_TWITTER') }}"><i class="fab fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -136,12 +136,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="make-appoinment.html" class="pq-button">
+                                    {{-- <a href="make-appoinment.html" class="pq-button">
                                         <div class="pq-button-block">
                                             <span class="pq-button-text">Appointments</span>
                                             <i class="ion ion-plus-round"></i>
                                         </div>
-                                    </a>
+                                    </a> --}}
                                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#navbarSupportedContent"
                                         aria-controls="navbarSupportedContent" aria-expanded="false"

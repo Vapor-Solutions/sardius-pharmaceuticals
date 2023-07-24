@@ -1,5 +1,5 @@
 <!--==================what we do start==================-->
-<section class="pq-bg-grey pq-pb-465">
+<section class="pq-bg-grey">
     <div class="container">
         <div class="row text-center justify-content-center">
             <div class="col-lg-12">
@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
-                <div class="pq-fancy-box pq-style-3">
+                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid" alt="Images">
                     </div>
                     <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
@@ -24,8 +24,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-md-6 mt-xl-0 mt-md-0 mt-4">
-                <div class="pq-fancy-box pq-style-3">
+            <div class="col-xl-4 col-md-6 mt-xl-0 mt-md-0 mt-4" >
+                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
@@ -39,8 +39,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
-                <div class="pq-fancy-box pq-style-3">
+            <div class="col-xl-4 col-md-12 mt-4 mt-xl-0" >
+                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>

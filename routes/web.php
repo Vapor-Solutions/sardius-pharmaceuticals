@@ -14,6 +14,7 @@ use App\Http\Livewire\Admin;
 |
 */
 
+//first change
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -30,6 +31,8 @@ Route::get('/contact-us', function () {
     return view('contact-us');
 })->name('contact-us');
 
+//Add subscriber email
+Route::post('/add-subscriber-email', 'NewsletterController@addSubscriber');
 
 /**
  * Redirect Routes

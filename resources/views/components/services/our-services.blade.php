@@ -2,13 +2,12 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12">
-                <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">FACILITIES WE
-                        HAVE</span>
+                <div class="pq-section pq-style-1 text-center"> <span class="pq-section-sub-title">Skills we bring to your business</span>
                     <h5 class="pq-section-title">Why Choose Sardius Pharma</h5>
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
-                <div class="pq-service-box pq-style-1">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/1.jpg" class="img-fluid" alt="servicebox">
                         </div>
@@ -26,7 +25,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-6 pt-xl-0 pt-md-0 pt-4">
-                <div class="pq-service-box pq-style-1">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/2.jpg" class="img-fluid" alt="servicebox">
                         </div>
@@ -42,7 +41,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
-                <div class="pq-service-box pq-style-1">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/3.jpg" class="img-fluid" alt="servicebox">
                         </div>
@@ -58,7 +57,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
-                <div class="pq-service-box pq-style-1">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/4.jpg" class="img-fluid" alt="servicebox">
                         </div>
@@ -73,8 +72,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
-                <div class="pq-service-box pq-style-1">
+            <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0 pt-4">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/5.jpg" class="img-fluid" alt="servicebox">
                         </div>
@@ -90,7 +89,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-10 col-lg-6 pt-xl-0  pt-4">
-                <div class="pq-service-box pq-style-1">
+                <div class="pq-service-box pq-style-1" style="width: 430px;">
                     <div class="pq-service-block">
                         <div class="pq-service-img"><img src="images/services/6.jpg" class="img-fluid" alt="servicebox">
                         </div>
