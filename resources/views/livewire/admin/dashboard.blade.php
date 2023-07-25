@@ -38,9 +38,9 @@
             <div class="small-box bg-sardius">
                 <div class="inner">
                     <h3 style="font-family:Arial, Helvetica, sans-serif; font-weight:bold">
-                        0
+                        {{ App\Models\Subscribers::where('status', '1')->count() }}
                     </h3>
-                    <p>Requests</p>
+                    <p>Active Newsletter Subscribers</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-bag"></i>
