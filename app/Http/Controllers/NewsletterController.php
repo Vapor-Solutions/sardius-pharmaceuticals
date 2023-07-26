@@ -40,6 +40,17 @@ class NewsletterController extends Controller
         $subscriber->status = 1;
         $subscriber->save();
 
-        return redirect()->back()->with('success', 'Your email has been captured successfully');
+        return redirect()->back()->with('done', 'Your have sucessfully subscribed to our newsletter');
+    }
+    
+    public function unsubscribe(Request $request){
+        $email = $request->input('email');
+        $subscriber = Subscribers::where('email', $email)->first();
+
+        if($subscriber){
+            $subscriber->status = 0;
+            $subscriber->save();
+        }
+        return redirect()->back()->with('done', 'Your have sucessfully unsubscribed to our newsletter');
     }
 }

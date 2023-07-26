@@ -11,8 +11,8 @@ class ContactUsController extends Controller
         $request->validate(
             [
                 'name' => 'required',
-                'phone_number'  => 'required',
-                'email'  => 'required',
+                'phone_number' => 'required|unique:contacts,phone_number',
+                'email'  => 'required|email|unique:contacts,email',
                 'subject'  => 'required',
                 'message'  => 'required',
             ]);
@@ -26,7 +26,7 @@ class ContactUsController extends Controller
 
             $contact->save();
 
-            return redirect()->back()->with('success', 'Your contact has been registered successfully');
+            return redirect()->back()->with('success', 'Your contact and message have been sent successfully. We will contact you shorly');
     }
 
 }

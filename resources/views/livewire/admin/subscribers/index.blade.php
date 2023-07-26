@@ -8,9 +8,10 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header d-flex">
-                <h3>List of Newsletter Subscribers</h3>
-                <a href="" class="btn btn-dark ms-auto me-2">Add a new subscriber</a>
-                <a href="" class="btn btn-success" wire:click.prevent="sendNewsletters">Send Newsletters</a>
+                <h3>Newsletter Mailing List</h3>
+                <a href="{{ route('admin.subscribers.create') }}" class="btn btn-dark ms-auto me-2">Add a new subscriber</a>
+                {{-- <a href="" class="btn btn-danger me-2" wire:click.prevent="sendNewsletters">Send Newsletters</a> --}}
+                <a href="" class="btn btn-success" wire:click.prevent="exportData">Export Data</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">

@@ -6,7 +6,7 @@
         <x-slot name="title">Contact Us</x-slot>
     </x-banner>
     <!--=================================
-                             conatct-us start-->
+                                                                 conatct-us start-->
     <section class="pq-contact-us">
         <div class="container">
             <div class="row justify-content-center">
@@ -56,9 +56,9 @@
         </div>
     </section>
     <!--=================================
-                                   contact-us end-->
+                                                                       contact-us end-->
     <!--=================================
-                                   get-in-touch start-->
+                                                                       get-in-touch start-->
     <section class="get-in-touch p-0">
         <div class="container">
             <div class="row">
@@ -70,6 +70,17 @@
                         </div>
                     </div>
                     <div class="pq-applyform-whitebg text-start">
+                        @if (session('success'))
+                            <div class="alert alert-success alert-dismissible fade show d-flex justify-content-between align-items-center"
+                                role="alert">
+                                <div>
+                                    {{ session('success') }}
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        @endif
+
                         <form action="{{ route('contactUs') }}" class="pq-applyform" method="POST">
                             @csrf
                             <div class="row">
@@ -78,30 +89,40 @@
                                         size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Name">
                                 </div>
+                                @error('name')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="email" id="email" name="email" class="e-mail-field"
-                                        value="" size="40" aria-required="true" aria-invalid="false"
+                                    <input type="email" id="email" name="email" class="e-mail-field" value=""
+                                        size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Email">
                                 </div>
+                                @error('email')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-6 col-md-6 mb-3">
                                     <input type="text" id="phone_number" name="phone_number" class="phone-number-field"
                                         value="" size="40" aria-required="true" aria-invalid="false"
                                         placeholder="Enter Your Phone Number">
                                 </div>
+                                @error('phone_number')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-6 col-md-6 mb-3">
-                                    <input type="text" id="subject" name="subject" class="subject-field"
-                                        size="40" aria-required="true" aria-invalid="false" placeholder="Subject">
+                                    <input type="text" id="subject" name="subject" class="subject-field" size="40"
+                                        aria-required="true" aria-invalid="false" placeholder="Subject">
                                 </div>
+                                @error('subject')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-12 col-md-12 mb-3">
                                     <textarea name="message" id="message" cols="40" rows="10" aria-required="true" aria-invalid="false"
                                         placeholder="Write Your Message"></textarea>
                                 </div>
+                                @error('message')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                                 <div class="col-lg-12 col-md-12">
-                                    {{-- <a class="pq-button form-btn mt-3" href="#" type="submit">
-                                        <div class="pq-button-block">
-                                            <span class="pq-button-text me-0">send message</span>
-                                        </div>
-                                    </a> --}}
                                     <button type="submit" class="btn btn-dark">Send Message</button>
                                 </div>
                             </div>
@@ -112,9 +133,9 @@
         </div>
     </section>
     <!--=================================
-                                   get-in-touch end-->
+                                                                       get-in-touch end-->
     <!--=================================
-                                   map start-->
+                                                                       map start-->
     <div class="map pt-0">
         <div class="pq-bg-map">
             <iframe src="https://maps.google.com/maps?q=The%20Stables%20Karen&t=&z=15&ie=UTF8&iwloc=&output=embed"
@@ -122,6 +143,6 @@
         </div>
     </div>
     <!--=================================
-                                   map end-->
+                                                                       map end-->
     <!--=================================-->
 @endsection

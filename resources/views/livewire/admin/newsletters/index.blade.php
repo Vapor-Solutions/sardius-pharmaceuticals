@@ -1,18 +1,13 @@
 <div>
-    <div>
-        <x-slot name="header">
-            <h2 class="h4 font-weight-bold">
-                {{ __('Photos') }}
-            </h2>
-        </x-slot>
-
+            
         <div class="container-fluid">
             <div class="card">
                 <div class="card-header d-flex">
-                    <h3>List of Customer Details & Their Enquires/Comments</h3>
-                    {{-- <a href="" class="btn btn-dark ms-auto me-2">Add a new customer</a> --}}
+                    <h3>Newsletters Sent</h3>
+                    <a href="{{ route('admin.newsletters.create') }}" class="btn btn-dark ms-auto me-2">Create a new Newsletter</a>
+                    <a href="{{ route('admin.dashboard') }}" class="btn btn-danger">Back</a>
                     {{-- <a href="" class="btn btn-success" wire:click.prevent="sendNewsletters">Send Newsletters</a> --}}
-                    <a href="" class="btn btn-success ms-auto" wire:click.prevent="exportData">Export Data</a>
+                    {{-- <a href="" class="btn btn-success" wire:click.prevent="exportData">Export Data</a> --}}
                 </div>
                 <div class="card-body">
                     <div class="table-responsive">
@@ -20,23 +15,22 @@
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Phone Number</th>
+                                    <th scope="col">Title</th>
                                     <th scope="col">Subject</th>
-                                    <th scope="col">Message</th>
-                                    <th scope="col">Actions</th>
+                                    <th scope="col">Action</th>
+                                    <th scope="col">Body</th>
+                                    <th scope="col">Date Sent</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($contacts as $key => $contact)
+                                @foreach ($newsletterMessages as $key => $newsletterMessage)
                                     <tr class="">
-                                        <td>{{ $contacts->firstItem() + $key }}</td>
-                                        <td>{{ $contact->name }}</td>
-                                        <td>{{ $contact->email }}</td>
-                                        <td>{{ $contact->phone_number }}</td>
-                                        <td>{{ $contact->subject }}</td>
-                                        <td>{{ $contact->message }}</td>
+                                        <td>{{ $newsletterMessages->firstItem() + $key }}</td>
+                                        <td>{{ $newsletterMessage->title }}</td>
+                                        <td>{{ $newsletterMessage->subject }}</td>
+                                        <td>{{ $newsletterMessage->action }}</td>
+                                        <td>{{ $newsletterMessage->body }}</td>
+                                        <td>{{ \Carbon\Carbon::parse($newsletterMessage->created_at)->format('F, jS Y') }}</td>
                                         {{-- <td>
                                             @if ($subscriber->status == 1)
                                                 <span class="text-success">Subscribed</span>
@@ -52,13 +46,14 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        @if (count($contacts))
-                            {{ $contacts->links() }}
+                        @if (count($newsletterMessages))
+                            {{ $newsletterMessages->links() }}
                         @endif
                     </div>
+
                 </div>
             </div>
         </div>
+        </div>
     </div>
-
 </div>

@@ -14,15 +14,17 @@ class NewsletterSubscribersMail extends Mailable
 {
     use Queueable, SerializesModels;
     public $emailContent;
+    public $email;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($emailContent)
+    public function __construct($emailContent, $email)
     {
         $this->emailContent = $emailContent;
+        $this->email = $email;
     }
 
     /**
@@ -33,7 +35,7 @@ class NewsletterSubscribersMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Newsletter Subscribers Mail'. Carbon::now()->getTimestamp(),
+            subject: $this->emailContent['subject']. ' ' . Carbon::now()->getTimestamp(),
         );
     }
 

@@ -2,11 +2,14 @@
 
 namespace App\Http\Livewire\Admin\Subscribers;
 
+use App\Exports\NewsletterSubscribersExport;
+use Maatwebsite\Excel\Facades\Excel;
 use App\Mail\NewsletterSubscribersMail;
 use App\Models\Subscribers;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Livewire\WithPagination;
+use PhpOffice\PhpSpreadsheet\Calculation\Information\ExcelError;
 
 class Index extends Component
 {
@@ -44,7 +47,15 @@ class Index extends Component
         $this->dispatchBrowserEvent('success', [
             'title'=>'Success',
             'icon'=>'success',
-            'text'=>'New Customer Registered Successfully'
+            'text'=>'Newsletters sent successfully'
+        ]);
+    }
+    public function exportData(){
+        return Excel::download(new NewsletterSubscribersExport, 'subscribers.xlsx');
+        $this->dispatchBrowserEvent('success', [
+            'title'=>'success',
+            'icon'=>'success',
+            'text'=>'Data exported successfully'
         ]);
     }
 }

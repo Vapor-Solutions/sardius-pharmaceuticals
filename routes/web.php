@@ -16,7 +16,6 @@ use App\Http\Livewire\Admin;
 |
 */
 
-//first change
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -35,6 +34,9 @@ Route::get('/contact-us', function () {
 
 //Add subscriber email
 Route::post('/add-subscriber-email', [NewsletterController::class, 'addNewsletterSubscriber'])->name('newsletterSubscriber');
+//Unsubscribing from newsletters
+Route::post('/unsubscribe', [NewsletterController::class, 'unsubscribe'])->name('unsubscribe');
+
 
 //Contact us details
 Route::post('/add-contact-us-details', [ContactUsController::class, 'contactUsDetails'])->name('contactUs');
@@ -52,23 +54,39 @@ Route::redirect('dashboard', 'admin/dashboard');
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->prefix('admin')->group(function () {
     Route::get('/dashboard', Admin\Dashboard::class)->name('admin.dashboard');
 
-
-    Route::prefix('photos')->group(function(){
+    //Photo routes
+    Route::prefix('photos')->group(function () {
         Route::get('/', Admin\Photos\Index::class)->name('admin.photos.index');
         Route::get('/create', Admin\Photos\Create::class)->name('admin.photos.create');
         Route::get('/{id}/edit', Admin\Photos\Edit::class)->name('admin.photos.edit');
     });
-    Route::prefix('photo_categories')->group(function(){
+
+    //Photo category routes
+    Route::prefix('photo_categories')->group(function () {
         Route::get('/', Admin\PhotoCategories\Index::class)->name('admin.photo_categories.index');
         Route::get('/create', Admin\PhotoCategories\Create::class)->name('admin.photo_categories.create');
         Route::get('/{id}/edit', Admin\PhotoCategories\Edit::class)->name('admin.photo_categories.edit');
     });
 
-    Route::get('contacts', Admin\Contacts\Index::class)->name('admin.contacts.index');
-    Route::get('subscribers', Admin\Subscribers\Index::class)->name('admin.subscribers.index');
-
-    Route::prefix('site-images')->group(function(){
-
+    //Customer contacts and messages routes
+    Route::prefix('customer_contacts')->group(function () {
+        Route::get('/', Admin\Contacts\Index::class)->name('admin.contacts.index');
+        Route::get('/create', Admin\Contacts\Create::class)->name('admin.contacts.create');
     });
 
+    //Site Images Routes
+    Route::prefix('site-images')->group(function () {
+    });
+
+    //Newsletter Routes
+    Route::prefix('newsletters')->group(function () {
+        Route::get('/', Admin\Newsletters\Index::class)->name('admin.newsletters.index');
+        Route::get('/create', Admin\Newsletters\Create::class)->name('admin.newsletters.create');
+    });
+
+    //Newsletter Subscribers routes
+    Route::prefix('newsletter_subscriber')->group(function () {
+        Route::get('/', Admin\Subscribers\Index::class)->name('admin.subscribers.index');
+        Route::get('/create', Admin\Subscribers\Create::class)->name('admin.subscribers.create');
+    });
 });

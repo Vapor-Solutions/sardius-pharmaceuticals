@@ -638,3 +638,8 @@ function addSubscriber() {
         },
     });
 }
+
+// function showAlert() {
+//     alert('Button clicked!');
+// }
+
