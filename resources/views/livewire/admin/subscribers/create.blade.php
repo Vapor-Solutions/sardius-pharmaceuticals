@@ -14,7 +14,7 @@
             @enderror
         </div>
         <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3" wire:click.prevent="save">Send Newletter</button>
+            <button type="submit" class="btn btn-primary mb-3" wire:click.prevent="save">Add Subscriber</button>
         </div>
     </div>
 </div>

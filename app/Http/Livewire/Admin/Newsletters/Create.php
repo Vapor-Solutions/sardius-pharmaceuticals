@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire\Admin\Newsletters;
 
+use App\Jobs\SendNewslettersJob;
 use App\Mail\NewsletterSubscribersMail;
 use App\Models\NewsletterMessage;
 use App\Models\Subscribers;
@@ -15,15 +16,17 @@ class Create extends Component
     protected $rules = [
         'newsletter.title' => 'required',
         'newsletter.subject' => 'required',
-        'newsletter.action'=> 'required',
+        'newsletter.action' => 'required',
         'newsletter.body' => 'required',
     ];
 
-    public function mount(){
+    public function mount()
+    {
         $this->newsletter = new NewsletterMessage();
     }
 
-    public function save(){
+    public function save()
+    {
         $this->validate();
         $this->sendNewsletters();
         $this->newsletter->save();
@@ -31,7 +34,8 @@ class Create extends Component
         $this->resetInput();
     }
 
-    public function resetInput(){
+    public function resetInput()
+    {
         $this->newsletter = new NewsletterMessage();
     }
 
@@ -45,22 +49,32 @@ class Create extends Component
     public function sendNewsletters()
     {
         $activeSubscribers = Subscribers::where('status', 1)->get();
-        $emailDelay = 5;
+        // $emailDelay = 5;
 
-        foreach($activeSubscribers as $subscriber){
-            $emailContent = [
-                'subject' => $this->newsletter->subject,
-                'title' => $this->newsletter->title,
-                'content' => $this->newsletter->body,
-            ];
-            Mail::to($subscriber->email)->send(new NewsletterSubscribersMail($emailContent, $subscriber->email));
-            sleep($emailDelay);
+        // foreach($activeSubscribers as $subscriber){
+        //     $emailContent = [
+        //         'subject' => $this->newsletter->subject,
+        //         'title' => $this->newsletter->title,
+        //         'content' => $this->newsletter->body,
+        //     ];
+        //     Mail::to($subscriber->email)->send(new NewsletterSubscribersMail($emailContent, $subscriber->email));
+        //     sleep($emailDelay);
+        // }
+
+        $emailContent = [
+            'subject' => $this->newsletter->subject,
+            'title' => $this->newsletter->title,
+            'content' => $this->newsletter->body,
+        ];
+
+        foreach ($activeSubscribers as $subscriber) {
+            SendNewslettersJob::dispatch($subscriber, $emailContent);
         }
 
         $this->dispatchBrowserEvent('success', [
-            'title'=>'Success',
-            'icon'=>'success',
-            'text'=>'Newsletters sent successfully'
+            'title' => 'Success',
+            'icon' => 'success',
+            'text' => 'Newsletters sent successfully'
         ]);
     }
 }

@@ -22,7 +22,6 @@
     <div class="container mt-4">
         <h1>{{ $emailContent['title'] }}</h1>
         <p>{{ $emailContent['content'] }}</p>
-        
         <!-- Unsubscribe Button -->
         <form action="{{ url('unsubscribe') }}" method="POST">
             @csrf
