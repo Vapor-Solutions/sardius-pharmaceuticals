@@ -123,10 +123,10 @@
                                                 <a href="mailto:{{ env('COMPANY_EMAIL') }}"><i
                                                         class="fas fa-envelope"></i><span>{{ env('COMPANY_EMAIL') }}</span></a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <i class="fas fa-map-marker"></i> <span>
                                                     {{ env('COMPANY_ADDRESS') }}</span>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                 </div>

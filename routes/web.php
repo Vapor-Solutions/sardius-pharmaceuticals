@@ -37,7 +37,6 @@ Route::post('/add-subscriber-email', [NewsletterController::class, 'addNewslette
 //Unsubscribing from newsletters
 Route::post('/unsubscribe', [NewsletterController::class, 'unsubscribe'])->name('unsubscribe');
 
-
 //Contact us details
 Route::post('/add-contact-us-details', [ContactUsController::class, 'contactUsDetails'])->name('contactUs');
 

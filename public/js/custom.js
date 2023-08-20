@@ -643,3 +643,21 @@ function addSubscriber() {
 //     alert('Button clicked!');
 // }
 
+
+// flipping effect card
+function flipCard(link) {
+    const card = link.closest('.flip-card');
+    card.classList.toggle('flipped');
+}
+
+const flipLinks = document.querySelectorAll('.flip-link');
+flipLinks.forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault();
+        flipCard(this);
+    });
+});
+;
+
+
+
