@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-md-6">
-                <div class="pq-fancy-box pq-style-3" style="height: 450px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 450px">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"> <i class=" flaticon-heartbeat"></i> </div>
@@ -55,12 +55,9 @@
                             Management, Translations,, Clinical Trial Registration,
                             Local Technical Representation (LTR), Policy and Advocacy, Regulatory Intelligence,
                             legislations and guideline impact assessment.</p>
-
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </section>

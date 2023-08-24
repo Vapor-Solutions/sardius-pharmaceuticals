@@ -9,6 +9,8 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
+
 
         <!-- Styles -->
         @vite('resources/sass/app.scss')
@@ -35,7 +37,7 @@
         </main>
 
         @stack('modals')
-
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         @livewireScripts
 
         @stack('scripts')
@@ -45,5 +47,18 @@
                 console.log(e)
             })
         </script>
+            <script>
+                window.addEventListener('success', function(e) {
+                    Swal.fire({
+                        icon: e.detail.icon,
+                        title: e.detail.title,
+                        text: e.detail.text,
+                        position: 'top-end',
+                        toast: true,
+                        showConfirmButton: false,
+                        timer: 5000
+                    });
+                });
+            </script>
     </body>
 </html>

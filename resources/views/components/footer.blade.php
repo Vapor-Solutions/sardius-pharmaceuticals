@@ -30,6 +30,16 @@
 
                                         <form id="form" class="form" action="{{ url('add-subscriber-email') }}"
                                             method="POST">
+                                            @if (session('done'))
+                                                <div class="alert alert-success alert-dismissible fade show d-flex justify-content-between align-items-center"
+                                                    role="alert">
+                                                    <div>
+                                                        {{ session('done') }}
+                                                    </div>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                            @endif
                                             @csrf
                                             <div class="form-fields">
                                                 <input class="w-100 pq-bg-transparent" type="email" name="email"
@@ -113,10 +123,10 @@
                                                 <a href="mailto:{{ env('COMPANY_EMAIL') }}"><i
                                                         class="fas fa-envelope"></i><span>{{ env('COMPANY_EMAIL') }}</span></a>
                                             </li>
-                                            <li>
+                                            {{-- <li>
                                                 <i class="fas fa-map-marker"></i> <span>
                                                     {{ env('COMPANY_ADDRESS') }}</span>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                 </div>

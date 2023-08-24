@@ -16,7 +16,7 @@ class NewsletterController extends Controller
     //             return "exists";
     //         }else{
     //             //Add newsletter subscriber in the subscribers table
-                
+
     //             $newsletter = new Subscribers;
     //             $newsletter->email = $data['subscriber_email'];
     //             $newsletter->status = 1;
@@ -27,19 +27,30 @@ class NewsletterController extends Controller
     //     }
     // }
 
-    public function addNewsletterSubscriber(Request $request){
+    public function addNewsletterSubscriber(Request $request)
+    {
         $request->validate(
             [
                 'email' => 'required|email|unique:subscribers,email'
             ]
-         );
+        );
 
-            $subscriber = new Subscribers();
-            $subscriber->email = $request->email;
-            $subscriber->status = 1;
+        $subscriber = new Subscribers();
+        $subscriber->email = $request->email;
+        $subscriber->status = 1;
+        $subscriber->save();
+
+        return redirect()->back()->with('done', 'Your have sucessfully subscribed to our newsletter');
+    }
+    
+    public function unsubscribe(Request $request){
+        $email = $request->input('email');
+        $subscriber = Subscribers::where('email', $email)->first();
+
+        if($subscriber){
+            $subscriber->status = 0;
             $subscriber->save();
-
-            return redirect()->back()->with('success', 'Your email has been captured successfully');
-
+        }
+        return redirect()->back()->with('done', 'Your have sucessfully unsubscribed to our newsletter');
     }
 }

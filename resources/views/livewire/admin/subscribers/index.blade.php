@@ -8,16 +8,19 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-header d-flex">
-                <h3>List of Newsletter Subscribers</h3>
-                <a href="" class="btn btn-dark ms-auto">Add a new subscriber</a>
+                <h3>Newsletter Mailing List</h3>
+                <a href="{{ route('admin.subscribers.create') }}" class="btn btn-dark ms-auto me-2">Add a new subscriber</a>
+                {{-- <a href="" class="btn btn-danger me-2" wire:click.prevent="sendNewsletters">Send Newsletters</a> --}}
+                <a href="" class="btn btn-success" wire:click.prevent="exportData">Export Data</a>
             </div>
             <div class="card-body">
                 <div class="table-responsive">
                     <table class="table ">
                         <thead>
                             <tr>
-                                <th scope="col">ID</th>
+                                <th scope="col">No.</th>
                                 <th scope="col">Email</th>
+                                <th scope="col">Date Subscribed</th>
                                 <th scope="col">Status</th>
                                 <th scope="col">Actions</th>
                             </tr>
@@ -25,13 +28,14 @@
                         <tbody>
                             @foreach ($subscribers as $key => $subscriber)
                                 <tr class="">
-                                    <td >{{ $subscribers->firstItem() + $key  }}</td>
+                                    <td>{{ $subscribers->firstItem() + $key }}</td>
                                     <td>{{ $subscriber->email }}</td>
+                                    <td>{{ \Carbon\Carbon::parse($subscriber->created_at)->format('F, jS Y') }}</td>
                                     <td>
                                         @if ($subscriber->status == 1)
-                                            Subscribed
+                                            <span class="text-success">Subscribed</span>
                                         @else
-                                            Unsubscribed
+                                            <span class="text-danger">Unsubscribed</span>
                                         @endif
                                     </td>
                                     <td>
@@ -43,10 +47,9 @@
                         </tbody>
                     </table>
                     @if (count($subscribers))
-                    {{ $subscribers->links() }}
-                @endif
+                        {{ $subscribers->links() }}
+                    @endif
                 </div>
-
             </div>
         </div>
     </div>

@@ -35,13 +35,13 @@
                         <div class="col-lg-12">
                             <div class="pq-header-top-wrapper">
                                 <div class="pq-site-logo">
-                                    <a class="navbar-brand" href="index.html">
+                                    <a class="navbar-brand" href="#">
                                         <img class="img-fluid logo" src="/images/logo.png" alt="medicate">
                                     </a>
                                 </div>
                                 <div class="pq-top-info-content">
                                     <div class="pq-header-info">
-                                        <div class="pq-header-info-box address">
+                                        {{-- <div class="pq-header-info-box address">
                                             <div class="info-icon">
                                                 <div class="icon">
                                                     <i class="ti-location-pin"></i>
@@ -51,7 +51,7 @@
                                                 <h4>Visit Us</h4>
                                                 <p>{{ env('COMPANY_ADDRESS') }}</p>
                                             </div>
-                                        </div>
+                                        </div> --}}
                                         <div class="pq-header-info-box">
                                             <div class="info-icon">
                                                 <div class="icon">
@@ -59,8 +59,10 @@
                                                 </div>
                                             </div>
                                             <div class="info-icon-content">
-                                                <h4>Email Us</h4>
-                                                <p>{{ env('COMPANY_EMAIL') }}</p>
+                                                <a href="mailto:{{ env('COMPANY_EMAIL') }}" style="text-decoration: none; color: var(--primary-color);">
+                                                    <h4 style="color: black">Email Us</h4>
+                                                    <p style="color: black">{{ env('COMPANY_EMAIL') }}</p>
+                                                </a>
                                             </div>
                                         </div>
                                         <div class="pq-header-info-box">
@@ -69,10 +71,12 @@
                                                     <i class="ti-headphone"></i>
                                                 </div>
                                             </div>
-                                            <div class="info-icon-content">
-                                                <h4>Call Us</h4>
-                                                <p> {{ env('COMPANY_PHONE') }}</p>
-                                            </div>
+                                            <a href="{{ env('COMPANY_PHONE') }}" style="text-decoration: none; color: var(--primary-color);">
+                                                <div class="info-icon-content">
+                                                    <h4 style="color: black">Call Us</h4>
+                                                    <p style="color: black">{{ env('COMPANY_PHONE') }}</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -109,10 +113,13 @@
                                                             class="@if (Request::is('services')) text-dark @endif">Services</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="/gallery" class="@if(Request::is('gallery'))text-dark @endif">Gallery</a>
+                                                        <a href="/gallery"
+                                                            class="@if (Request::is('gallery')) text-dark @endif">Gallery</a>
                                                     </li>
                                                     <li class="menu-item">
-                                                        <a href="/contact-us" class="@if(Request::is('contact-us'))text-dark @endif">Contact Us</a>
+                                                        <a href="/contact-us"
+                                                            class="@if (Request::is('contact-us')) text-dark @endif">Contact
+                                                            Us</a>
                                                     </li>
                                                 </ul>
                                             </div>

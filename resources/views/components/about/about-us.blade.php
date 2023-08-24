@@ -7,10 +7,10 @@
                  <div class="pq-section pq-style-1 text-left"> <span class="pq-section-sub-title">What About Us</span>
                      <h5 class="pq-section-title">HERE TO MEET YOUR BUSINESS NEEDS</h5>
                      <p class="pq-section-description">Sardius Pharma Limited is a company established in 2022 in
-                         Nairobi, Kenya to provide Pharmaceutical Regulatory Services, Local
-                         Technical Representation (LTR), Pharmacovigilance, Quality Assurance, Clinical Trial
-                         Registration and Support, Compliance , Training,
-                         Market Research, Intelligence, advocacy and Governance. </p>
+                         Nairobi, Kenya to provide Pharmaceutical Regulatory Services, Local Technical Representation
+                         (LTR), Pharmacovigilance, Quality Assurance, Clinical Trial Registration and Support,
+                         Compliance, Training, Market Research, Intelligence, Policy and advocacy and Governance among
+                         other services. </p>
                  </div>
                  <div class="row mt-3">
                      <div class="col-12">
@@ -53,8 +53,17 @@
                      </div>
                      <div class="col-lg-6 col-md-6 mt-md-5">
                          <div class="pq-contact-box1">
-                             <h4 class="pq-contact-title">{{ env('COMPANY_PHONE') }}</h4>
-                             <p class="pq-contact-desciption pq-text-primary mb-0">Do you have any question?</p>
+                             <h5 class="pq-contact-title">
+                                 <a href="{{ env('COMPANY_WHATSAPP') }}" style="text-decoration: none; color: var(--primary-color);">
+                                     <i class="fab fa-whatsapp" style="margin-right: 5px;"></i> {{ env('COMPANY_PHONE') }}
+                                 </a>
+                             </h5>
+                             <h5 class="pq-contact-title">
+                                <a href="mailto:{{ env('COMPANY_EMAIL') }}"
+                                    style="text-decoration: none; color: var(--primary-color); white-space: nowrap;">
+                                    <i class="fas fa-envelope" style="margin-right: 5px;"></i> Do you have any question?
+                                </a>
+                            </h5>
                          </div>
                      </div>
                      {{-- <div class="col-lg-6 col-md-6 mt-md-5"> <img src="images/sign.png" class="img-fluid pq-signimg"
