@@ -643,21 +643,26 @@ function addSubscriber() {
 //     alert('Button clicked!');
 // }
 
+// toggling card effect
+const toggleCard = (event) => {
+    event.preventDefault();
+    const flipCardInner = event.target.closest('.flip-card-inner');
+    flipCardInner.classList.toggle('flipped');
+};
 
-// flipping effect card
-function flipCard(link) {
-    const card = link.closest('.flip-card');
-    card.classList.toggle('flipped');
-}
-
-const flipLinks = document.querySelectorAll('.flip-link');
-flipLinks.forEach(link => {
-    link.addEventListener('click', function (event) {
-        event.preventDefault();
-        flipCard(this);
-    });
+const readMoreLinks = document.querySelectorAll('.read-more-link');
+readMoreLinks.forEach(link => {
+    link.addEventListener('click', toggleCard);
 });
-;
+
+const goBackLinks = document.querySelectorAll('.go-back-link');
+goBackLinks.forEach(link => {
+    link.addEventListener('click', toggleCard);
+});
+
+
+
+
 
 
 
