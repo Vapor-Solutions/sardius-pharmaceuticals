@@ -41,9 +41,9 @@
                 </div>
             </div> --}}
 
-            <div class="col-xl-4 col-md-6 mb-4">
-                <div class="flip-card card  pq-fancy-box pq-style-3" style="height: 400px;">
-                    <div class="flip-card-inner">
+             <div class="col-xl-4 col-md-6 mb-4">
+                <div class="flip-card card pq-fancy-box pq-style-3" style="height: 400px;">
+                    <div class="flip-card-inner" id="flip-card">
                         <div class="flip-card-front">
                             <!-- Front Content -->
                             <div class="pq-fancy-box-icon"> <i class="flaticon-heartbeat"></i> </div>
@@ -53,6 +53,8 @@
                                     companies succeed in Africa by providing multi-market Regulatory Services support in
                                     the highly complex Africa markets using a wealth of regulatory affairs experts
                                     within the team.</p>
+
+                                <a href="#" class="read-more-link red-text">Read More</a>
                             </div>
                         </div>
                         <div class="flip-card-back">
@@ -63,11 +65,17 @@
                                 Renewals, Labelling, Artwork Management, Samples Management, Translations, Clinical
                                 Trial Registration, Local Technical Representation (LTR), Policy and Advocacy,
                                 Regulatory Intelligence, legislations and guideline impact assessment.</p>
+
+                                <a href="#" class="go-back-link red-text">Go Back</a>
                         </div>
                     </div>
                 </div>
             </div>
             
+            
+
+ 
+
 
 
 

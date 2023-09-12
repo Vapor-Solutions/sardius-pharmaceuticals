@@ -6271,7 +6271,7 @@ Custom Css
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card-inner.flipped {
   transform: rotateY(180deg);
 }
 
@@ -6286,6 +6286,15 @@ Custom Css
 .flip-card-back {
   transform: rotateY(180deg);
 }
+
+
+/* CSS to style the anchor tag texts in the flip cards */
+.red-text {
+  color: #f14404;
+  text-decoration: none;
+}
+
+
 
 
 
