@@ -10,7 +10,7 @@
             </div>
 
             <div class=" col-xl-4 col-md-6 mb-4">
-                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"><i class="flaticon-heartbeat"></i></div>
@@ -25,11 +25,28 @@
 
                 </div>
             </div>
+            <div class=" col-xl-4 col-md-6 mb-4">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
+                    <div class="pq-fancy-box-hoverbg"> <img src="images/services/6.jpg" class="img-fluid"
+                            alt="Images"> </div>
+                    <div class="pq-fancy-box-icon"><i class="flaticon-heartbeat"></i></div>
+                    <div class="pq-fancy-box-info left">
+                        <h5 class="pq-fancy-box-title">Product Registration</h5>
+                        <p class="pq-fancybox-description">The team has a vast experience in New Product Registrations
+                            and Marketing Authorizations, license Maintenance, Post approval Changes, Divestments,
+                            Portfolio Optimization, Renewals, Labelling, Artwork Management, Samples Management,
+                            Translations,, Clinical Trial Registration, Local Technical Representation (LTR), Policy and
+                            Advocacy, Regulatory Intelligence, legislations and guideline impact assessment. </p>
+                        <a href="{{ route('about') }}" class="btn btn-dark text-white">CLICK FOR MORE</a>
+                    </div>
+
+                </div>
+            </div>
 
 
 
             <div class=" col-xl-4 col-md-6 mb-4">
-                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
@@ -46,7 +63,7 @@
 
             {{-- new changes --}}
             <div class=" col-xl-4 col-md-6 mb-4">
-                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/3.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
@@ -63,7 +80,7 @@
 
             {{-- new changes --}}
             <div class=" col-xl-4 col-md-6 mb-4">
-                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/4.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
@@ -79,7 +96,7 @@
 
             {{-- new changes --}}
             <div class="col-xl-4 col-md-12 mt-4 mt-xl-0">
-                <div class="pq-fancy-box pq-style-3" style="height: 400px;">
+                <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/5.jpg" class="img-fluid"
                             alt="Images"> </div>
                     <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
