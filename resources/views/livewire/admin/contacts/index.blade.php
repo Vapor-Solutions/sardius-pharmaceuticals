@@ -1,4 +1,11 @@
 <div>
+<<<<<<< HEAD
+    <x-slot:header>
+        <h2 class="h4 font-weight-bold">
+            {{ __('Contacts') }}
+        </h2>
+    </x-slot:header>
+=======
     <div>
         <x-slot name="header">
             <h2 class="h4 font-weight-bold">
@@ -60,5 +67,6 @@
             </div>
         </div>
     </div>
+>>>>>>> 835e5f0fc31fd9a1f4aa8392d2dfe32ce7d391f2
 
 </div>

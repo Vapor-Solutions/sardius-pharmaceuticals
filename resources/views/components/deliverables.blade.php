@@ -12,10 +12,8 @@
                 <div class="pq-section pq-style-1 text-left">
                     <span class="pq-section-sub-title">Services</span>
                     <h5 class="pq-section-title">Our Deliverables</h5>
-                    <p class="pq-section-description">In line with the recent business operating changes GSK wishes to
-                        appoint a Regulatory Service Provider who can provide the
-                        services in the Kenya Market and can expand into the larger
-                        Africa Territory (FWCA, EA, OWA).</p>
+                    <p class="pq-section-description">We are a regulatory service provider who can provide these
+                        services in serveral markets in Sub-Saharan Africa.</p>
                 </div>
                 <div class="hl"></div>
                 <div class="row mt-3 mb-5">
