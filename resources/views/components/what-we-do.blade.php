@@ -13,7 +13,7 @@
                 <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/1.jpg" class="img-fluid"
                             alt="Images"> </div>
-                    <div class="pq-fancy-box-icon"><i class="flaticon-heartbeat"></i></div>
+                    <div class="pq-fancy-box-icon"><i class="flaticon-stethoscope"></i></div>
                     <div class="pq-fancy-box-info left">
                         <h5 class="pq-fancy-box-title">Pharmaceutical Regulatory Services</h5>
                         <p class="pq-fancybox-description">Sardius Pharma Limited aims to help pharmaceutical
@@ -49,7 +49,7 @@
                 <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/2.jpg" class="img-fluid"
                             alt="Images"> </div>
-                    <div class="pq-fancy-box-icon"><i class=" flaticon-first-aid-box"></i></div>
+                    <div class="pq-fancy-box-icon"><i class=" flaticon-medicine"></i></div>
                     <div class="pq-fancy-box-info left">
                         <h5 class="pq-fancy-box-title">Pharmaceutical Compliance</h5>
                         <p class="pq-fancybox-description">The Sardius Pharma team combined has over 35 years of
@@ -83,7 +83,7 @@
                 <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/4.jpg" class="img-fluid"
                             alt="Images"> </div>
-                    <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
+                    <div class="pq-fancy-box-icon"> <i class="flaticon-doctor"></i> </div>
                     <div class="pq-fancy-box-info left">
                         <h5 class="pq-fancy-box-title">Quality Assurance</h5>
                         <p class="pq-fancybox-description">We are experts in Quality assurance, Good Distribution
@@ -99,7 +99,7 @@
                 <div class="pq-fancy-box pq-style-3" style="height: 500px;">
                     <div class="pq-fancy-box-hoverbg"> <img src="images/services/5.jpg" class="img-fluid"
                             alt="Images"> </div>
-                    <div class="pq-fancy-box-icon"> <i class="flaticon-healthcare"></i> </div>
+                    <div class="pq-fancy-box-icon"> <i class="flaticon-medical-history"></i> </div>
 
                     {{-- <div class="pq-fancy-box-icon">
                         <img src="images/ethics.png" alt="Ethics Icon">
